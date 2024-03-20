@@ -4,6 +4,7 @@ void main() {
 //Declarations
   String fullName = "Mark Campos";
   const int value = 7;
+  value;
   double principal = 100;
   double rate = 10;
   int time = 6;
