@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void  main(){
+void main() {
 //Declarations
   String fullName = "Mark Campos";
   const int value = 7;
@@ -34,14 +34,14 @@ void  main(){
   print("Enter your Last Name: ");
   String? lname = stdin.readLineSync();
   print("Your full name is: $lname, $fname");
- 
+
   //Practice 7
   print("Get the quotient and remainder. Enter the divisor: ");
   int? divisor = int.parse(stdin.readLineSync()!);
   print("Enter the dividend");
   int? dividend = int.parse(stdin.readLineSync()!);
-  double quotient = dividend/divisor;
-  int remainder = dividend%divisor;
+  double quotient = dividend / divisor;
+  int remainder = dividend % divisor;
   int quotientFinal = quotient.toInt();
   print("The quotient is $quotientFinal and the remainder is $remainder");
 
@@ -55,9 +55,9 @@ Enter the Value A: """);
   (swap_A, swap_B) = (swap_B, swap_A); // (5, 4) = (4,5)
   print("Value A = $swap_A and Value B = $swap_B");
   //old way to swap a value. Value A = 5, Value B = 4
-  swap_A = swap_A+swap_B; // 5 + 4 = 9
-  swap_B = swap_A-swap_B; // 9 - 4 = 5
-  swap_A = swap_A-swap_B; // 9 - 5 = 4
+  swap_A = swap_A + swap_B; // 5 + 4 = 9
+  swap_B = swap_A - swap_B; // 9 - 4 = 5
+  swap_A = swap_A - swap_B; // 9 - 5 = 4
   print("Value A = $swap_A and Value B = $swap_B");
 
   //Practice 9
@@ -71,7 +71,7 @@ Enter the Value A: """);
   String stringToIntValue = stdin.readLineSync()!;
   print("Type before parsing: ${stringToIntValue.runtimeType}");
   print("Value before parsing: \"$stringToIntValue\"");
-  //Parsing from String to Int and assigning to variable named numericValue 
+  //Parsing from String to Int and assigning to variable named numericValue
   int numericValue = int.parse(stringToIntValue);
   print("Type after parsing: ${numericValue.runtimeType}");
   print("Value after parsing: $numericValue");
@@ -82,7 +82,7 @@ Enter the Value A: """);
   double totalBill = double.parse(stdin.readLineSync()!);
   print("Enter the number of people");
   int peopleCount = int.parse(stdin.readLineSync()!);
-  double billPerPerson = totalBill/peopleCount;
+  double billPerPerson = totalBill / peopleCount;
   print("Bill per person: \$$billPerPerson");
 
   //Practice 12
@@ -91,7 +91,8 @@ Enter the Value A: """);
   double distanceKM = double.parse(stdin.readLineSync()!);
   print("Enter the average speed(KPH): ");
   double speedKPH = double.parse(stdin.readLineSync()!);
-  double travelDuration = distanceKM/speedKPH;
+  double travelDuration = distanceKM / speedKPH;
   print("Your travel time is ${travelDuration.toStringAsFixed(2)} hours");
 
+  //testCommit
 }
